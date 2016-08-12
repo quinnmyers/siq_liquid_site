@@ -1,0 +1,83 @@
+.contact
+  margin-top: 50px
+  .contact-text
+    max-width: 320px
+    background: $lightgrey
+    border-radius: 10px
+    p
+      margin: 0
+      font-family: $bitter
+      color: $maingrey
+      padding: 20px
+      line-height: 25px
+  .contact-form
+    display: flex
+    justify-content: flex-start
+    margin: auto
+    margin-bottom: 45px
+    color: $maingrey
+    .form-container
+      display: flex
+      align-self: flex-start
+      .name,
+      .email,
+      .subject,
+      .message
+        p
+          font-family: $bitter
+          font-size: 14px
+          text-decoration: underline
+          padding: 0
+          margin: 0
+          margin-bottom: 5px
+        input
+          margin-bottom: 10px
+          font-family: $bitter
+        textarea
+          font-family: $bitter
+      .name,
+      .email,
+      .subject
+        .yourname,
+        .youremail,
+        .yoursubject
+          width: 200px
+          height: 30px
+          border: 1px solid $maingrey
+          border-radius: 3px
+      .message
+        .yourmessage
+          width: 420px
+          height: 150px
+          border: 1px solid $maingrey
+          border-radius: 3px
+          text-align: top
+          resize: none
+      .button
+        .submitbutton
+          width: 100px
+          color: $maingrey
+          height: 35px
+          font-family: $bitter
+          float: right
+          border-radius: 3px
+          background: white
+          border: 1px solid $maingrey
+
+        .submitbutton:hover
+          background-color: $green
+          color: white
+          border: 1px solid $maingrey
+
+
+@media (max-width: 770px)
+  .contact-text
+    margin: auto !important
+    margin-top: -50px !important
+  .contact-form
+    margin: auto !important
+    .form-container
+      margin: auto !important
+
+  .yourmessage
+    width: 100% !important

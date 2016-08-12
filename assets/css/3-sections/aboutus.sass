@@ -1,0 +1,47 @@
+.aboutus
+  height: auto
+  justify-content: center
+  margin-left: 10px
+
+  background:
+    image: url(/assets/images/bottle_pic_1.jpg)
+    repeat: no-repeat
+    size: 45%
+
+
+  .aboutus-text
+    display: flex
+    flex-direction: column
+    width: auto
+    height: auto
+    align-items: center
+    margin: auto
+    background: white
+    p
+      margin: 0
+      padding: 0
+      font-family: $bitter
+      line-height: 30px
+      color: $maingrey
+      padding: 0 10px
+
+@media (max-width: 800px)
+  .about
+    background: none
+
+  .aboutus-text
+    align-self: center
+    max-width: 100%
+    p
+      margin-top: 25px !important
+  .col-right
+    margin-right: 0px !important
+
+  .mobile-bg
+    height: 300px
+    width: 300px
+    margin: 35px auto
+    background:
+      image: url(/assets/images/bottle_pic_1.jpg)
+      repeat: no-repeat
+      size: 100%

@@ -1,0 +1,336 @@
+.home
+  height: auto
+  margin-top: 10px
+  .home-cta
+    display: none
+    justify-content: center
+    align-items: center
+    font-family: $bitter
+    background-color: rgb(223, 240, 216)
+    border: 1px solid rgb(213, 232, 197)
+    color: forestgreen
+    border-radius: 5px
+    font-size: 14px
+    height: auto
+    width: 230px
+    margin-top: -10px
+    text-align: center
+    margin-bottom: 10px
+    margin-left: 10px
+    .x-button
+      display: flex
+      position: relative
+      align-self: flex-end
+      justify-content: center
+      margin-top: 5px
+      margin-right: 5px
+      float: right
+      height: 16px
+      width: 16px
+      background: #e74c3c
+      border-radius: 100%
+      .line1
+        position: absolute
+        margin-top: 7px
+        margin-left: -5px
+        background: rgb(242,222,222)
+        width: 10px
+        height: 1px
+        transform: rotate(45deg)
+      .line2
+        display: flex
+        margin-top: 7px
+        margin-left: -5px
+        position: absolute
+        background: rgb(242,222,222)
+        align-self: center
+        width: 10px
+        height: 1px
+        transform: rotate(-45deg)
+
+
+      .line2
+    .cta-text
+      display: inline-block
+      vertical-align: middle
+      align-self: center
+      height: auto
+      width: auto
+
+  .bottle-container
+    height: auto
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-start
+    .container1,
+    .container2,
+    .container3,
+    .container4,
+    .container5,
+    .container6,
+      height: 450px
+      width: 100px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: flex-start
+      .bottle1,
+      .bottle2,
+      .bottle3,
+      .bottle4,
+      .bottle5,
+      .bottle6,
+        transition: .3s ease-in-out
+        transform: scale(1)
+        display: flex
+        align-self: center
+        height: 100%
+        width: 60px
+        height: 400px
+        border-radius: 20px
+      &:first-child
+        margin-left: 30px
+      &:last-child
+        margin-right: 30px
+
+
+      .bottle1
+        background: $orange
+      .bottle2
+        background: $yellow
+      .bottle3
+        background: $green
+      .bottle4
+        background: $purple
+      .bottle5
+        background: $greywhite
+      .bottle6
+        background: black
+
+      .name1,
+      .name2,
+      .name3,
+      .name4,
+      .name5,
+      .name6,
+        display: none
+        text-align: center
+        align-self: flex-end
+        //display: none
+        margin: 10px auto
+        height: 25px
+        width: 100px
+        border-top: 1px solid $lightgrey
+        border-bottom: 1px solid $lightgrey
+        opacity: 1
+        animation: fade 1s linear
+
+        //change to display flex in js to show correctly
+        p
+          font-family: $kd
+          font-size: 12px
+          color: $maingrey
+          letter-spacing: 1px
+          padding: 0
+          margin: auto
+
+
+    .container1:hover,
+    .container2:hover,
+    .container3:hover,
+    .container4:hover,
+    .container5:hover,
+    .container6:hover,
+      .bottle1,
+      .bottle2,
+      .bottle3,
+      .bottle4,
+      .bottle5,
+      .bottle6,
+        transition: .5s ease-in-out
+        transform: scale(.9)
+
+
+
+
+  .desc-container
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    width: calc(100% - 20px)
+    margin-left: 10px
+    height: 300px
+    p
+      color: $maingrey
+    .desc
+      margin-top: 15px
+      animation: fade .5s linear
+      margin-bottom: 50px
+
+    .desc#orange
+      display: none
+      width: 420px
+      padding: 10px
+      font-family: $bitter
+      line-height: 30px
+      border-top: 1px solid $orange
+      border-bottom: 1px solid $orange
+    .desc#yellow
+      display: none
+      width: 420px
+      padding: 10px
+      font-family: $bitter
+      line-height: 30px
+      border-top: 1px solid $yellow
+      border-bottom: 1px solid $yellow
+    .desc#green
+      display: none
+      width: 420px
+      padding: 10px
+      font-family: $bitter
+      line-height: 30px
+      border-top: 1px solid $green
+      border-bottom: 1px solid $green
+    .desc#purple
+      display: none
+      width: 420px
+      padding: 10px
+      font-family: $bitter
+      line-height: 30px
+      border-top: 1px solid $purple
+      border-bottom: 1px solid $purple
+    .desc#white
+      display: none
+      width: 420px
+      padding: 10px
+      font-family: $bitter
+      line-height: 30px
+      border-top: 1px solid $greywhite
+      border-bottom: 1px solid $greywhite
+    .desc#black
+      display: none
+      width: 420px
+      padding: 10px
+      font-family: $bitter
+      line-height: 30px
+      border-top: 1px solid black
+      border-bottom: 1px solid black
+
+  .mobile-cta
+    display: none
+    font-family: $bitter
+    color: $maingrey
+    margin-left: 10px
+    font-size: 12px
+    margin-bottom: 20px
+
+
+
+
+@keyframes fade
+  0%
+   opacity: 0
+  50%
+   opacity: 0.75
+  100%
+    opacity: 1
+
+
+@media (max-width: 660px)
+  .mobile-cta
+    display: block !important
+
+  .bottle-container
+    height: 350px !important
+  .container1,
+  .container2,
+  .container3,
+  .container4,
+  .container5,
+  .container6,
+    height: 350px !important
+  .bottle1,
+  .bottle2,
+  .bottle3,
+  .bottle4,
+  .bottle5,
+  .bottle6,
+    width: 40px !important
+    height: 300px !important
+    border-radius: 15px !important
+
+  .name1,
+  .name2,
+  .name3,
+  .name4,
+  .name5,
+  .name6,
+    height: 20px !important
+    width: 80px !important
+    //change to display flex in js to show correctly
+    p
+      font-size: 10px !important
+
+  .desc
+    margin-top: -40px !important
+
+
+@media (max-width: 550px)
+  .mobile-cta
+    display: block !important
+  .bottle-container
+    flex-direction: row !important
+    align-items: center
+    height: 250px !important
+  .container1,
+  .container2,
+  .container3,
+  .container4,
+  .container5,
+  .container6,
+    width: 15% !important
+
+  .bottle1,
+  .bottle2,
+  .bottle3,
+  .bottle4,
+  .bottle5,
+  .bottle6,
+    width: calc(100%-5px) !important
+    height: 60% !important
+
+  .container1
+    margin-left: 30px !important
+
+  .name1,
+  .name2,
+  .name3,
+  .name4,
+  .name5,
+  .name6,
+    display: none !important
+
+  .container1:hover,
+  .container2:hover,
+  .container3:hover,
+  .container4:hover,
+  .container5:hover,
+  .container6:hover,
+    .bottle1,
+    .bottle2,
+    .bottle3,
+    .bottle4,
+    .bottle5,
+    .bottle6,
+      transition: none !important
+      transform: none !important
+  .desc-container
+
+    margin-right: 10px !important
+
+  .desc
+    margin: auto
+    max-width: 320px !important
+    margin-top: -15px !important

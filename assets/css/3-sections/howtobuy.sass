@@ -1,0 +1,62 @@
+.howtobuy
+  .howto-text
+    margin-top: 25px
+    margin-bottom: 40px
+
+    p
+      margin: 0
+      font-family: $bitter
+      line-height: 30px
+
+  .top-decoration
+    display: flex
+    justify-content: space-between
+    margin: 15px auto
+    height: 100px
+    width: calc(100% - 20px)
+    .dec1,
+    .dec2,
+    .dec3,
+    .dec4,
+    .dec5,
+    .dec6,
+      height: 100%
+      width: 25px
+      border-radius: 10px
+
+    .dec1,
+      background: $orange
+    .dec2,
+      background: $yellow
+    .dec3,
+      background: $green
+    .dec4,
+      background: $purple
+    .dec5,
+      background: $greywhite
+    .dec6,
+      background: black
+
+  //maybe make the styling better on this col1 table better in mobile later
+  .howto-pricing
+    margin-top: 25px
+    table
+      width: auto
+      height: auto
+      margin: auto
+    table, th, td
+      border-collapse: collapse
+      border-top: 1px solid $maingrey
+      border-bottom: 1px solid $maingrey
+
+    th
+      font-family: $kd
+      padding: 10px
+      letter-spacing: 1px
+    td
+      font-family: $bitter
+      color: $maingrey
+      padding: 5px
+
+    tr:nth-child(odd)
+      background-color: $lightgrey

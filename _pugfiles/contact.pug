@@ -1,0 +1,25 @@
+section.contact
+  .flex.flex-center
+    .col-1
+      .contact-text
+        p We look forward to speaking with you about any questions you may have. Please just email us using the form and we will usually respond within a few hours.
+
+        p Thank you very much for your interest in Siq Liquid.
+    .col-1
+      .contact-form
+        .form-container
+          form(action="https://formspree.io/quinnsmyers@gmail.com" method="POST")
+            .name
+              p your name
+              input(type="text" name="name" class="yourname")
+            .email
+              p your email
+              input(type="email" name="_replyto" class="youremail")
+            .subject
+              p subject
+              input(type="text" name="_subject" class="yoursubject")
+            .message
+              p message
+              textarea(type="message" name="_message" class="yourmessage")
+            .button
+              input(type="submit" value="Send" class="submitbutton")
